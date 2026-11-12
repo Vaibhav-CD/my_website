@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VAIBHAV C D // PORTFOLIO</title>
+<meta name="description" content="Portfolio of Vaibhav C D — Software Engineer, AI/ML Developer & Mathematics and Computing undergrad at IIT Guwahati. National Semi-Finalist at Flipkart GRID 8.0, Shortlisted for Meta AI Developer Hackathon.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <style>
@@ -43,9 +45,9 @@ section{position:relative;z-index:10;min-height:100vh;padding:120px 10% 80px}
 #hero{display:flex;flex-direction:column;justify-content:center;min-height:100vh;padding-top:80px}
 .hero-layout{display:grid;grid-template-columns:1fr auto;align-items:center;gap:60px}
 .hero-label{font-size:0.85rem;color:var(--cyan);letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;animation:fadeInUp 0.6s ease both}
-.hero-name{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(2.8rem,7vw,6.5rem);line-height:0.9;letter-spacing:-2px;animation:fadeInUp 0.6s 0.1s ease both}
+.hero-name{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(2.8rem,7vw,6.5rem);line-height:0.95;letter-spacing:-2px;animation:fadeInUp 0.6s 0.1s ease both}
 .hero-name .line1{display:block;color:#fff;text-shadow:0 0 30px rgba(255,255,255,0.3)}
-.hero-name .line2{display:block;color:transparent;-webkit-text-stroke:1px var(--cyan);position:relative}
+.hero-name .line2{display:block;color:transparent;-webkit-text-stroke:1px var(--cyan);position:relative;font-size:0.42em;letter-spacing:6px;margin-top:10px}
 .hero-name .line2::after{content:attr(data-text);position:absolute;left:0;top:0;color:var(--cyan);filter:blur(8px);opacity:0.5}
 .hero-title{margin-top:24px;font-size:1rem;color:var(--dim);letter-spacing:3px;animation:fadeInUp 0.6s 0.2s ease both}
 .hero-title span{color:var(--green)}
@@ -106,10 +108,12 @@ section{position:relative;z-index:10;min-height:100vh;padding:120px 10% 80px}
 #about .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
 .about-bio{font-size:1rem;line-height:1.9;color:var(--text)}
 .about-bio p{margin-bottom:18px;padding-left:4px}
+.about-bio strong{color:var(--cyan);font-weight:600}
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.stat-card{background:rgba(0,255,245,0.03);border:1px solid var(--border);padding:24px;text-align:center;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%)}
-.stat-number{font-family:'Orbitron',monospace;font-size:2.2rem;font-weight:700;color:var(--cyan);text-shadow:0 0 15px var(--cyan);display:block}
-.stat-label{font-size:0.75rem;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-top:4px;display:block}
+.stat-card{background:rgba(0,255,245,0.03);border:1px solid var(--border);padding:24px;text-align:center;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);transition:border-color 0.3s,transform 0.3s}
+.stat-card:hover{border-color:rgba(0,255,245,0.4);transform:translateY(-3px)}
+.stat-number{font-family:'Orbitron',monospace;font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:700;color:var(--cyan);text-shadow:0 0 15px var(--cyan);display:block}
+.stat-label{font-size:0.72rem;color:var(--dim);letter-spacing:2px;text-transform:uppercase;margin-top:6px;display:block}
 
 /* CV + RESEARCH MERGED SECTION */
 #cv-research{min-height:auto;padding-bottom:80px}
@@ -124,7 +128,7 @@ section{position:relative;z-index:10;min-height:100vh;padding:120px 10% 80px}
 .cv-desc{font-size:0.95rem;color:var(--dim);line-height:1.9;margin-bottom:28px;border-left:2px solid var(--purple);padding-left:16px}
 .cv-meta{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
 .cv-meta-item{display:flex;gap:10px;font-size:0.85rem}
-.cv-meta-key{color:var(--dim);min-width:80px}
+.cv-meta-key{color:var(--dim);min-width:100px}
 .cv-meta-key::after{content:':'}
 .cv-meta-val{color:var(--cyan)}
 .cv-btn-row{display:flex;gap:12px;flex-wrap:wrap}
@@ -152,23 +156,35 @@ section{position:relative;z-index:10;min-height:100vh;padding:120px 10% 80px}
 .research-keywords{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;padding-left:42px}
 .rk{padding:3px 10px;font-size:0.65rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid rgba(0,255,245,0.15);color:var(--dim);background:rgba(0,255,245,0.03)}
 
-/* CERTIFICATIONS */
+/* CERTIFICATIONS & HONORS */
 #certifications{min-height:auto;padding-bottom:80px}
-.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.cert-card{background:var(--panel);border:1px solid var(--border);padding:26px;position:relative;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%);transition:all 0.35s;overflow:hidden}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.cert-card{background:var(--panel);border:1px solid var(--border);padding:26px;position:relative;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%);transition:all 0.35s;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
 .cert-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,var(--gold),transparent)}
 .cert-card:hover{border-color:rgba(255,215,0,0.35);box-shadow:0 0 30px rgba(255,215,0,0.08);transform:translateY(-5px)}
+
+.cert-card.featured{border-color:rgba(0,255,245,0.35);background:rgba(0,255,245,0.03)}
+.cert-card.featured::before{background:linear-gradient(to right,var(--cyan),var(--purple),var(--gold))}
+.cert-card.featured:hover{border-color:rgba(0,255,245,0.6);box-shadow:0 0 35px rgba(0,255,245,0.12);transform:translateY(-5px)}
+
 .cert-badge{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;border:1px solid rgba(255,215,0,0.3);background:rgba(255,215,0,0.06);position:relative}
 .cert-badge::after{content:'';position:absolute;inset:-5px;border-radius:50%;border:1px dashed rgba(255,215,0,0.2);animation:spin 12s linear infinite}
+.cert-badge.semi-finalist{border-color:rgba(0,255,245,0.4);background:rgba(0,255,245,0.08);color:var(--cyan)}
+.cert-badge.semi-finalist::after{border-color:rgba(0,255,245,0.3)}
+.cert-badge.meta-badge{border-color:rgba(179,0,255,0.4);background:rgba(179,0,255,0.08);color:var(--purple)}
+.cert-badge.meta-badge::after{border-color:rgba(179,0,255,0.3)}
 @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
 .cert-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:14px}
-.cert-title{font-family:'Orbitron',monospace;font-size:0.82rem;font-weight:700;color:#fff;letter-spacing:1px;line-height:1.4;margin-bottom:6px}
+.cert-title{font-family:'Orbitron',monospace;font-size:0.85rem;font-weight:700;color:#fff;letter-spacing:1px;line-height:1.4;margin-bottom:6px}
 .cert-issuer{font-size:0.75rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.cert-issuer.cyan-issuer{color:var(--cyan)}
+.cert-issuer.purple-issuer{color:var(--purple)}
 .cert-desc{font-size:0.88rem;color:var(--dim);line-height:1.8;margin-bottom:14px}
-.cert-footer{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.cert-tags-wrap{margin-bottom:12px}
+.cert-footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px;border-top:1px solid rgba(0,255,245,0.08)}
 .cert-date{font-size:0.72rem;color:var(--dim);letter-spacing:1px}
 .cert-date::before{content:'📅 '}
-.cert-link{font-size:0.72rem;color:var(--cyan);text-decoration:none;letter-spacing:2px;text-transform:uppercase;transition:text-shadow 0.2s}
+.cert-link{font-size:0.72rem;color:var(--cyan);text-decoration:none;letter-spacing:2px;text-transform:uppercase;transition:text-shadow 0.2s;display:inline-flex;align-items:center}
 .cert-link:hover{text-shadow:0 0 8px var(--cyan)}
 .cert-link::before{content:'→ '}
 .cert-tag{display:inline-block;padding:3px 10px;font-size:0.65rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid rgba(255,215,0,0.25);color:var(--gold);background:rgba(255,215,0,0.04);margin-right:6px;margin-bottom:6px}
@@ -237,17 +253,16 @@ section{position:relative;z-index:10;min-height:100vh;padding:120px 10% 80px}
 #gallery{min-height:auto;padding-bottom:80px}
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;perspective:1200px}
 .gallery-item{position:relative;overflow:hidden;aspect-ratio:4/3;background:rgba(0,0,0,0.3);cursor:pointer;transform-style:preserve-3d;transform:rotateX(4deg) rotateY(-4deg);transition:transform 0.5s ease,box-shadow 0.5s ease;border-radius:4px}
-.gallery-item:nth-child(1){grid-row:span 2;aspect-ratio:auto}
 .gallery-item:nth-child(odd){transform:rotateX(3deg) rotateY(5deg)}
 .gallery-item:nth-child(even){transform:rotateX(-3deg) rotateY(-5deg)}
 .gallery-item:hover{transform:rotateX(0deg) rotateY(0deg) scale(1.04) translateZ(20px);box-shadow:0 30px 60px rgba(0,0,0,0.8),0 0 40px rgba(0,255,245,0.2);z-index:5}
-.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.75) saturate(0.65) contrast(1.1);transition:filter 0.5s}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.85) saturate(0.85) contrast(1.1);transition:filter 0.5s}
 .gallery-item:hover img{filter:brightness(1) saturate(1) contrast(1.05)}
 .gallery-item::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(0,255,245,0.15) 0%,transparent 50%,rgba(179,0,255,0.1) 100%);opacity:0;transition:opacity 0.4s}
 .gallery-item:hover::before{opacity:1}
 .gallery-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(2,4,8,0.92) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:18px;opacity:0;transition:opacity 0.35s}
 .gallery-item:hover .gallery-overlay{opacity:1}
-.gallery-title{font-family:'Orbitron',monospace;font-size:0.68rem;color:#fff;letter-spacing:1.5px;margin-bottom:4px;line-height:1.4}
+.gallery-title{font-family:'Orbitron',monospace;font-size:0.72rem;color:#fff;letter-spacing:1.5px;margin-bottom:4px;line-height:1.4}
 .gallery-sub{font-size:0.65rem;color:var(--cyan);letter-spacing:2px;text-transform:uppercase}
 .gallery-scan{position:absolute;top:0;left:0;right:0;height:1px;z-index:3;background:linear-gradient(to right,transparent,var(--cyan),transparent);animation:scanLine 3.5s linear infinite;opacity:0;transition:opacity 0.3s}
 .gallery-item:hover .gallery-scan{opacity:1}
@@ -256,8 +271,8 @@ section{position:relative;z-index:10;min-height:100vh;padding:120px 10% 80px}
 
 .lightbox{position:fixed;inset:0;z-index:9999;background:rgba(2,4,8,0.96);display:none;align-items:center;justify-content:center;backdrop-filter:blur(12px)}
 .lightbox.open{display:flex}
-.lightbox-inner{position:relative;max-width:80vw;max-height:80vh}
-.lightbox-img{max-width:100%;max-height:80vh;display:block;border-radius:4px;box-shadow:0 0 60px rgba(0,255,245,0.2)}
+.lightbox-inner{position:relative;max-width:85vw;max-height:85vh}
+.lightbox-img{max-width:100%;max-height:85vh;display:block;border-radius:4px;box-shadow:0 0 60px rgba(0,255,245,0.25)}
 .lightbox-close{position:absolute;top:-44px;right:0;font-size:1.2rem;color:var(--cyan);cursor:pointer;letter-spacing:2px;font-family:'Share Tech Mono',monospace;background:none;border:none}
 
 /* CONTACT */
@@ -297,8 +312,9 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
 .footer-time{font-size:0.72rem;color:var(--dim);letter-spacing:1px;font-family:'Share Tech Mono',monospace}
 
 .scroll-indicator{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:100;display:flex;flex-direction:column;gap:8px;align-items:center}
-.scroll-dot{width:4px;height:4px;border-radius:50%;background:var(--dim);transition:all 0.3s}
-.scroll-dot.active{background:var(--cyan);box-shadow:0 0 8px var(--cyan);transform:scale(1.5)}
+.scroll-dot{width:6px;height:6px;border-radius:50%;background:var(--dim);transition:all 0.3s;cursor:pointer}
+.scroll-dot:hover{background:var(--cyan);transform:scale(1.3)}
+.scroll-dot.active{background:var(--cyan);box-shadow:0 0 8px var(--cyan);transform:scale(1.6)}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 .reveal{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
@@ -310,14 +326,15 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
   #about .about-grid,.contact-grid,.profile-grid{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:1fr 1fr;perspective:none}
   .gallery-item,.gallery-item:nth-child(odd),.gallery-item:nth-child(even){transform:none}
-  .gallery-item:nth-child(1){grid-row:auto}
   section{padding:100px 5% 60px}
   .hero-cta{flex-direction:column}
 }
 @media(max-width:600px){
+  nav{padding:10px 16px;flex-wrap:wrap;gap:8px}
+  .nav-links{display:flex;gap:12px;overflow-x:auto;width:100%;padding:4px 0}
+  .nav-links a{font-size:0.65rem;white-space:nowrap}
+  .nav-status{display:none}
   .gallery-grid{grid-template-columns:1fr}
-  nav{padding:14px 20px}
-  .nav-links{display:none}
   .certs-grid{grid-template-columns:1fr}
   footer{flex-direction:column;gap:12px;text-align:center}
 }
@@ -335,15 +352,15 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
 </div>
 
 <div class="scroll-indicator">
-  <div class="scroll-dot active"></div>
-  <div class="scroll-dot"></div>
-  <div class="scroll-dot"></div>
-  <div class="scroll-dot"></div>
-  <div class="scroll-dot"></div>
-  <div class="scroll-dot"></div>
-  <div class="scroll-dot"></div>
-  <div class="scroll-dot"></div>
-  <div class="scroll-dot"></div>
+  <div class="scroll-dot active" title="Hero"></div>
+  <div class="scroll-dot" title="About"></div>
+  <div class="scroll-dot" title="CV & Research"></div>
+  <div class="scroll-dot" title="Honors & Certs"></div>
+  <div class="scroll-dot" title="Profile"></div>
+  <div class="scroll-dot" title="Skills"></div>
+  <div class="scroll-dot" title="Projects"></div>
+  <div class="scroll-dot" title="Visual Log"></div>
+  <div class="scroll-dot" title="Contact"></div>
 </div>
 
 <nav>
@@ -351,7 +368,7 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#cv-research">CV &amp; Research</a></li>
-    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#certifications">Honors &amp; Certs</a></li>
     <li><a href="#profile">Profile</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -368,7 +385,7 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
       <div class="hero-label">INITIALIZING PROFILE...</div>
       <h1 class="hero-name glitch">
         <span class="line1">VAIBHAV C D</span>
-        <span class="line2" data-text=""></span>
+        <span class="line2" data-text="PORTFOLIO">PORTFOLIO</span>
       </h1>
       <div class="hero-title">SOFTWARE ENGINEER / AI ENGINEER <span>· FULL STACK</span></div>
       <div class="terminal-line">
@@ -410,15 +427,15 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
         <div class="corner-tl"></div><div class="corner-br"></div>
         <div class="about-bio">
           <p>Hello! I'm Vaibhav C D — a Mathematics and Computing undergrad with a Minor in Data Science and AI at IIT Guwahati.</p>
-          <p>I've been doing web development, ML, and FinTech over the past two years, solving complex challenges and shipping real products.</p>
-          <p>Beyond studying, I actively participate in hackathons, contribute to open source, and am constantly pushing to evolve.</p>
+          <p>I've been engineering full-stack web applications, machine learning systems, and algorithmic frameworks over the past two years, solving complex computational challenges and shipping real products.</p>
+          <p>Beyond coursework, I actively compete in premier hackathons — recognized as a <strong>National Semi-Finalist in Flipkart GRID 8.0</strong> (Prompt the Future) and shortlisted for the global <strong>Meta AI Developer Hackathon</strong> (selected among only 20,000 developer spots worldwide).</p>
         </div>
       </div>
     </div>
     <div class="about-stats reveal" style="transition-delay:.2s">
-      <div class="stat-card"><span class="stat-number">2+</span><span class="stat-label">Years Coding</span></div>
+      <div class="stat-card"><span class="stat-number">Top 20k</span><span class="stat-label">Meta AI Global Spot</span></div>
+      <div class="stat-card"><span class="stat-number">Semi-Finalist</span><span class="stat-label">Flipkart GRID 8.0</span></div>
       <div class="stat-card"><span class="stat-number">10+</span><span class="stat-label">Projects Shipped</span></div>
-      <div class="stat-card"><span class="stat-number">12+</span><span class="stat-label">Technologies</span></div>
       <div class="stat-card"><span class="stat-number">∞</span><span class="stat-label">Drive to Learn</span></div>
     </div>
   </div>
@@ -444,10 +461,12 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
         <div class="cv-meta-item"><span class="cv-meta-key">Name</span><span class="cv-meta-val">Vaibhav C D</span></div>
         <div class="cv-meta-item"><span class="cv-meta-key">Institute</span><span class="cv-meta-val">IIT Guwahati</span></div>
         <div class="cv-meta-item"><span class="cv-meta-key">Role</span><span class="cv-meta-val">Aspiring Software Engineer</span></div>
+        <div class="cv-meta-item"><span class="cv-meta-key">Honors</span><span class="cv-meta-val">Flipkart GRID 8.0 Semi-Finalist · Meta AI Hackathon (Top 20k)</span></div>
         <div class="cv-meta-item"><span class="cv-meta-key">Location</span><span class="cv-meta-val">Bengaluru, India</span></div>
       </div>
       <div class="cv-btn-row">
-        <a href="https://drive.google.com/file/d/15zaE3Eg1nBU-DERJaHASQ8_guzSjwwKE/view?usp=sharing" target="_blank" class="btn-view-cv">⊞ VIEW ONLINE</a>
+        <a href="VCD (8).pdf" download="Vaibhav_C_D_Resume.pdf" class="btn-download">↓ DOWNLOAD CV</a>
+        <a href="https://drive.google.com/file/d/1FRIgzKOQAzQSJG32hAAu1_MjkH3dehwe/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-view-cv">⊞ VIEW ONLINE</a>
       </div>
     </div>
 
@@ -455,22 +474,22 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
     <div class="reveal" style="transition-delay:.2s">
       <div class="research-col-header">RESEARCH<span>_</span>INTERESTS</div>
       <div class="research-col-line"></div>
-      <p class="research-intro">Areas I am actively exploring, reading about, and hope to contribute to through projects, publications, or collaboration.</p>
+      <p class="research-intro">Areas I am actively exploring, reading about, and eager to contribute to through projects, publications, and collaborations.</p>
       <div class="research-areas">
         <div class="research-item" style="--research-color:#00fff5">
           <div class="research-item-header"><span class="research-icon">🤖</span><span class="research-name">MACHINE LEARNING</span></div>
-          <div class="research-desc">Interested in supervised and unsupervised learning paradigms, model optimization, and applying ML to real-world engineering problems.</div>
-          <div class="research-keywords"><span class="rk">Neural Networks</span><span class="rk">Markov Process</span></div>
+          <div class="research-desc">Interested in supervised and unsupervised learning paradigms, model optimization, generative models, and applying ML to real-world engineering challenges.</div>
+          <div class="research-keywords"><span class="rk">Neural Networks</span><span class="rk">Markov Process</span><span class="rk">GenAI</span></div>
         </div>
         <div class="research-item" style="--research-color:#b300ff">
           <div class="research-item-header"><span class="research-icon">🔗</span><span class="research-name">MATHEMATICS</span></div>
-          <div class="research-desc">Very much interested in collaborating on math-related works or finance research.</div>
+          <div class="research-desc">Passionate about collaborating on computational mathematics, financial modeling, and applied quantitative research.</div>
           <div class="research-keywords"><span class="rk">Number Theory</span><span class="rk">Calculus</span><span class="rk">Optimization</span></div>
         </div>
         <div class="research-item" style="--research-color:#00ff41">
           <div class="research-item-header"><span class="research-icon">🛡️</span><span class="research-name">ALGORITHMS</span></div>
-          <div class="research-desc">Interested in forming new efficient algorithms — and believes that P = NP (though not yet proven).</div>
-          <div class="research-keywords"><span class="rk">Optimization Algorithms</span></div>
+          <div class="research-desc">Interested in designing novel heuristic and exact algorithms — and fascinated by computational complexity and graph optimization.</div>
+          <div class="research-keywords"><span class="rk">Optimization Algorithms</span><span class="rk">Graph Theory</span></div>
         </div>
       </div>
     </div>
@@ -478,56 +497,126 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
+<!-- CERTIFICATIONS & HONORS -->
 <section id="certifications">
   <div class="section-header reveal">
-    <h2 class="section-title">VERIFIED<span>_</span>CREDENTIALS</h2>
+    <h2 class="section-title">HONORS <span>&amp;</span> CREDENTIALS</h2>
     <div class="section-line"></div>
   </div>
   <div class="certs-grid">
-    <div class="cert-card reveal" style="transition-delay:.1s">
-      <div class="cert-header">
-        <div class="cert-badge">🏅</div>
-        <div>
-          <div class="cert-title">Google AI Essentials</div>
-          <div class="cert-issuer">Google via Coursera</div>
+    <!-- FLIPKART GRID 8.0 -->
+    <div class="cert-card featured reveal" style="transition-delay:.1s">
+      <div>
+        <div class="cert-header">
+          <div class="cert-badge semi-finalist">🏆</div>
+          <div>
+            <div class="cert-title">National Semi-Finalist — Flipkart GRID 8.0</div>
+            <div class="cert-issuer cyan-issuer">Flipkart Early Careers</div>
+          </div>
+        </div>
+        <p class="cert-desc">Recognized as a National Semi-Finalist in Flipkart GRID 8.0 (Prompt the Future track), competing among top engineering talent from premier institutions across India in one of the nation's biggest tech hackathons.</p>
+        <div class="cert-tags-wrap">
+          <span class="cert-tag" style="border-color:rgba(0,255,245,0.3);color:var(--cyan);background:rgba(0,255,245,0.06)">Flipkart GRID 8.0</span>
+          <span class="cert-tag" style="border-color:rgba(0,255,65,0.3);color:var(--green);background:rgba(0,255,65,0.06)">Semi-Finalist</span>
+          <span class="cert-tag">Prompt Eng</span>
+          <span class="cert-tag">GenAI</span>
         </div>
       </div>
-      <p class="cert-desc">Covers all fundamentals of using AI efficiently — how it works and how to use it ethically.</p>
-      <div><span class="cert-tag">AI</span><span class="cert-tag">GenAI</span></div>
       <div class="cert-footer">
-        <span class="cert-date">2025</span>
-        <a href="https://drive.google.com/file/d/1y5AJD6nkJ0rnUbziqjT2HAChC2In9yxX/view?usp=drive_link" target="_blank" class="cert-link">VERIFY</a>
+        <span class="cert-date">25 Sept 2026</span>
+        <a href="flipkart_grid_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">VIEW CERTIFICATE</a>
       </div>
     </div>
+
+    <!-- META AI DEVELOPER HACKATHON -->
+    <div class="cert-card featured reveal" style="transition-delay:.15s">
+      <div>
+        <div class="cert-header">
+          <div class="cert-badge meta-badge">🌐</div>
+          <div>
+            <div class="cert-title">Shortlisted — Meta AI Developer Hackathon</div>
+            <div class="cert-issuer purple-issuer">Meta</div>
+          </div>
+        </div>
+        <p class="cert-desc">Shortlisted for the prestigious Meta AI Developer Hackathon, securing a coveted spot among only 20,000 developers selected worldwide in an intensely competitive global developer cohort building with Meta AI.</p>
+        <div class="cert-tags-wrap">
+          <span class="cert-tag" style="border-color:rgba(179,0,255,0.35);color:var(--purple);background:rgba(179,0,255,0.06)">Meta AI</span>
+          <span class="cert-tag" style="border-color:rgba(0,255,245,0.3);color:var(--cyan);background:rgba(0,255,245,0.06)">Top 20K Worldwide</span>
+          <span class="cert-tag">Hackathon</span>
+          <span class="cert-tag">Llama</span>
+        </div>
+      </div>
+      <div class="cert-footer">
+        <span class="cert-date">2026</span>
+        <span class="cert-link" style="color:var(--green)">✓ SHORTLISTED</span>
+      </div>
+    </div>
+
+    <!-- STAGE 2 SELECTION ALGOUNIVERSITY -->
     <div class="cert-card reveal" style="transition-delay:.2s">
-      <div class="cert-header">
-        <div class="cert-badge">🏅</div>
-        <div>
-          <div class="cert-title">Machine Learning</div>
-          <div class="cert-issuer">IITG.ai</div>
+      <div>
+        <div class="cert-header">
+          <div class="cert-badge">🏅</div>
+          <div>
+            <div class="cert-title">Stage 2 Selection</div>
+            <div class="cert-issuer">AlgoUniversity</div>
+          </div>
+        </div>
+        <p class="cert-desc">Selected for the 2nd round of the AlgoUniversity Fellowship coding event, demonstrating advanced algorithmic problem-solving and data structure mastery.</p>
+        <div class="cert-tags-wrap">
+          <span class="cert-tag">DSA</span>
+          <span class="cert-tag">Algorithms</span>
+          <span class="cert-tag">Coding</span>
         </div>
       </div>
-      <p class="cert-desc">Complete Machine Learning course covering supervised and unsupervised learning and its variants.</p>
-      <div><span class="cert-tag">ML</span></div>
       <div class="cert-footer">
         <span class="cert-date">2025</span>
-        <a href="https://drive.google.com/file/d/1x3y23W1ZdE0ReEKHvkbjZKpw9QUVxtdu/view?usp=drive_link" target="_blank" class="cert-link">VERIFY</a>
+        <a href="https://drive.google.com/file/d/1fJxmxuRM35fUOD2aPYj7Q3lmXtUjOxGz/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">VERIFY</a>
       </div>
     </div>
-    <div class="cert-card reveal" style="transition-delay:.3s">
-      <div class="cert-header">
-        <div class="cert-badge">🏅</div>
-        <div>
-          <div class="cert-title">Stage 2 Selection</div>
-          <div class="cert-issuer">AlgoUniversity</div>
+
+    <!-- GOOGLE AI ESSENTIALS -->
+    <div class="cert-card reveal" style="transition-delay:.25s">
+      <div>
+        <div class="cert-header">
+          <div class="cert-badge">🏅</div>
+          <div>
+            <div class="cert-title">Google AI Essentials</div>
+            <div class="cert-issuer">Google via Coursera</div>
+          </div>
+        </div>
+        <p class="cert-desc">Covers comprehensive fundamentals of using AI efficiently — understanding internal model mechanics, prompt crafting, and ethical AI deployment.</p>
+        <div class="cert-tags-wrap">
+          <span class="cert-tag">AI</span>
+          <span class="cert-tag">GenAI</span>
+          <span class="cert-tag">Google</span>
         </div>
       </div>
-      <p class="cert-desc">Selected for the 2nd round of the AlgoUniversity Fellowship coding event.</p>
-      <div><span class="cert-tag">DSA</span><span class="cert-tag">Coding</span></div>
       <div class="cert-footer">
         <span class="cert-date">2025</span>
-        <a href="https://drive.google.com/file/d/1fJxmxuRM35fUOD2aPYj7Q3lmXtUjOxGz/view?usp=sharing" target="_blank" class="cert-link">VERIFY</a>
+        <a href="https://drive.google.com/file/d/1y5AJD6nkJ0rnUbziqjT2HAChC2In9yxX/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">VERIFY</a>
+      </div>
+    </div>
+
+    <!-- MACHINE LEARNING IITG.AI -->
+    <div class="cert-card reveal" style="transition-delay:.3s">
+      <div>
+        <div class="cert-header">
+          <div class="cert-badge">🏅</div>
+          <div>
+            <div class="cert-title">Machine Learning</div>
+            <div class="cert-issuer">IITG.ai</div>
+          </div>
+        </div>
+        <p class="cert-desc">Rigorous Machine Learning curriculum covering supervised and unsupervised learning, loss formulation, gradient descent, and mathematical foundations.</p>
+        <div class="cert-tags-wrap">
+          <span class="cert-tag">ML</span>
+          <span class="cert-tag">Deep Learning</span>
+        </div>
+      </div>
+      <div class="cert-footer">
+        <span class="cert-date">2025</span>
+        <a href="https://drive.google.com/file/d/1x3y23W1ZdE0ReEKHvkbjZKpw9QUVxtdu/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">VERIFY</a>
       </div>
     </div>
   </div>
@@ -544,7 +633,7 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
       <div class="profile-avatar-area">
         <div class="profile-pic-3d-wrap">
           <div class="profile-pic-3d">
-            <img src="close_pic.jpeg" alt="Vaibhav C D">
+            <img src="profile_pic.jpeg" alt="Vaibhav C D">
           </div>
         </div>
         <div>
@@ -562,16 +651,16 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
     <div class="reveal" style="transition-delay:.2s">
       <div class="social-links-title">CONNECTED CHANNELS</div>
       <div class="social-grid">
-        <a href="https://youtube.com/@vaibhavcd8378?si=YHDBrLrCLdJ7LBbv" target="_blank" class="social-item" style="--social-color:#ff0000">
+        <a href="https://youtube.com/@vaibhavcd8378?si=YHDBrLrCLdJ7LBbv" target="_blank" rel="noopener noreferrer" class="social-item" style="--social-color:#ff0000">
           <span class="social-icon">▶</span><div class="social-info"><span class="social-platform">YouTube</span><span class="social-handle">Vaibhav C D</span></div><span class="social-arrow">↗</span>
         </a>
-        <a href="https://linkedin.com/in/vaibhavcd" target="_blank" class="social-item" style="--social-color:#0a66c2">
+        <a href="https://linkedin.com/in/vaibhavcd" target="_blank" rel="noopener noreferrer" class="social-item" style="--social-color:#0a66c2">
           <span class="social-icon">in</span><div class="social-info"><span class="social-platform">LinkedIn</span><span class="social-handle">linkedin.com/in/vaibhavcd</span></div><span class="social-arrow">↗</span>
         </a>
-        <a href="https://github.com/Vaibhav-CD" target="_blank" class="social-item" style="--social-color:#e6edf3">
+        <a href="https://github.com/Vaibhav-CD" target="_blank" rel="noopener noreferrer" class="social-item" style="--social-color:#e6edf3">
           <span class="social-icon">⬡</span><div class="social-info"><span class="social-platform">GitHub</span><span class="social-handle">github.com/Vaibhav-CD</span></div><span class="social-arrow">↗</span>
         </a>
-        <a href="https://instagram.com/vaibhavcd" target="_blank" class="social-item" style="--social-color:#e1306c">
+        <a href="https://instagram.com/vaibhavcd" target="_blank" rel="noopener noreferrer" class="social-item" style="--social-color:#e1306c">
           <span class="social-icon">◈</span><div class="social-info"><span class="social-platform">Instagram</span><span class="social-handle">vaibhavcd</span></div><span class="social-arrow">↗</span>
         </a>
         <a href="mailto:vaibhavcdiitg@gmail.com" class="social-item" style="--social-color:#00fff5">
@@ -634,15 +723,14 @@ footer{position:relative;z-index:10;padding:32px 10%;border-top:1px solid var(--
       <div class="project-num">02</div>
       <div class="project-status"><div class="project-status-dot"></div>LIVE</div>
       <div class="project-name">Heuristic Graph Resolution Framework</div>
-      <div class="project-desc">Engineered a Cooperative Heuristic Iterated Local Search (CHILS) algorithm for the NP-Hard Maximum Weight
-Independent Set, scaling efficiently to 200,000-vertex graph networks.</div>
-      <div class="project-tags"></div>
+      <div class="project-desc">Engineered a Cooperative Heuristic Iterated Local Search (CHILS) algorithm for the NP-Hard Maximum Weight Independent Set, scaling efficiently to 200,000-vertex graph networks.</div>
+      <div class="project-tags"><span class="tag">C++</span><span class="tag">Graph Theory</span><span class="tag">Optimization</span><span class="tag">CHILS</span></div>
     </div>
     <div class="project-card reveal" style="transition-delay:.3s">
       <div class="project-num">03</div>
       <div class="project-status"><div class="project-status-dot"></div>LIVE</div>
-      <div class="project-name">Movie rating prediction model</div>
-      <div class="project-desc"> Deployed a scalable LightGBM regressor with L1/L2 regularization for high-speed predictive modeling.</div>
+      <div class="project-name">Movie Rating Prediction Model</div>
+      <div class="project-desc">Deployed a scalable LightGBM regressor with L1/L2 regularization for high-speed predictive modeling.</div>
       <div class="project-tags"><span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">Optuna</span></div>
     </div>
   </div>
@@ -655,6 +743,14 @@ Independent Set, scaling efficiently to 200,000-vertex graph networks.</div>
     <div class="section-line"></div>
   </div>
   <div class="gallery-grid reveal" style="transition-delay:.1s">
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="flipkart_grid.jpg" alt="National Semi-Finalist Flipkart GRID 8.0 Certificate">
+      <div class="gallery-scan"></div>
+      <div class="gallery-overlay">
+        <div class="gallery-title">National Semi-Finalist — Flipkart GRID 8.0</div>
+        <div class="gallery-sub">National Achievement</div>
+      </div>
+    </div>
     <div class="gallery-item" onclick="openLightbox(this)">
       <img src="ptc.jpg" alt="PTC Contest">
       <div class="gallery-scan"></div>
@@ -711,13 +807,13 @@ Independent Set, scaling efficiently to 200,000-vertex graph networks.</div>
         <a href="mailto:vaibhavcdiitg@gmail.com" class="contact-item">
           <span class="contact-icon">✉</span><div><div class="contact-label">EMAIL</div><div class="contact-value">vaibhavcdiitg@gmail.com</div></div>
         </a>
-        <a href="https://github.com/Vaibhav-CD" class="contact-item" target="_blank">
+        <a href="https://github.com/Vaibhav-CD" class="contact-item" target="_blank" rel="noopener noreferrer">
           <span class="contact-icon">⬡</span><div><div class="contact-label">GITHUB</div><div class="contact-value">github.com/Vaibhav-CD</div></div>
         </a>
-        <a href="https://linkedin.com/in/vaibhavcd" class="contact-item" target="_blank">
+        <a href="https://linkedin.com/in/vaibhavcd" class="contact-item" target="_blank" rel="noopener noreferrer">
           <span class="contact-icon">◈</span><div><div class="contact-label">LINKEDIN</div><div class="contact-value">linkedin.com/in/vaibhavcd</div></div>
         </a>
-        <a href="https://youtube.com/@vaibhavcd8378" class="contact-item" target="_blank">
+        <a href="https://youtube.com/@vaibhavcd8378" class="contact-item" target="_blank" rel="noopener noreferrer">
           <span class="contact-icon">▶</span><div><div class="contact-label">YOUTUBE</div><div class="contact-value">Vaibhav C D</div></div>
         </a>
       </div>
@@ -743,10 +839,18 @@ Independent Set, scaling efficiently to 200,000-vertex graph networks.</div>
 </footer>
 
 <script>
+// EmailJS Configuration (Safely initialized)
 const EMAILJS_PUBLIC_KEY  = 'IVZ7yRUcbdDIXoyld';
 const EMAILJS_SERVICE_ID  = 'service_esi15wn';
 const EMAILJS_TEMPLATE_ID = 'template_ek1355c';
-emailjs.init(EMAILJS_PUBLIC_KEY);
+
+if (typeof emailjs !== 'undefined') {
+  try {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  } catch (e) {
+    console.warn('EmailJS initialization warning:', e);
+  }
+}
 
 async function sendMessage() {
   const name    = document.getElementById('senderName').value.trim();
@@ -756,106 +860,226 @@ async function sendMessage() {
   const btnTxt  = document.getElementById('sendBtnText');
   const toast   = document.getElementById('formToast');
   toast.className = 'form-toast';
-  if (!name || !email || !message) { toast.className='form-toast error'; toast.textContent='ALL FIELDS REQUIRED BEFORE TRANSMISSION'; return; }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { toast.className='form-toast error'; toast.textContent='INVALID RETURN ADDRESS FORMAT'; return; }
-  btn.disabled=true; btn.classList.add('sending'); btnTxt.textContent='TRANSMITTING...';
+
+  if (!name || !email || !message) {
+    toast.className = 'form-toast error';
+    toast.textContent = 'ALL FIELDS REQUIRED BEFORE TRANSMISSION';
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    toast.className = 'form-toast error';
+    toast.textContent = 'INVALID RETURN ADDRESS FORMAT';
+    return;
+  }
+
+  if (typeof emailjs === 'undefined') {
+    toast.className = 'form-toast error';
+    toast.innerHTML = 'TRANSMISSION SERVICE OFFLINE. PLEASE EMAIL DIRECTLY: <a href="mailto:vaibhavcdiitg@gmail.com" style="color:var(--cyan)">vaibhavcdiitg@gmail.com</a>';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.classList.add('sending');
+  btnTxt.textContent = 'TRANSMITTING...';
+
   try {
-    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { from_name:name, from_email:email, message, to_name:'Vaibhav' });
-    btn.classList.remove('sending'); btn.classList.add('sent'); btnTxt.textContent='✓ TRANSMITTED';
-    toast.className='form-toast success'; toast.textContent='MESSAGE RECEIVED. WILL RESPOND SHORTLY.';
-    document.getElementById('senderName').value=''; document.getElementById('senderEmail').value=''; document.getElementById('senderMessage').value='';
-    setTimeout(()=>{ btn.classList.remove('sent'); btn.disabled=false; btnTxt.textContent='TRANSMIT →'; },5000);
-  } catch(err) {
-    btn.classList.remove('sending'); btn.classList.add('error-state'); btn.disabled=false; btnTxt.textContent='✗ FAILED — RETRY';
-    toast.className='form-toast error'; toast.textContent='TRANSMISSION FAILED. CHECK EMAILJS CONFIG.';
-    setTimeout(()=>{ btn.classList.remove('error-state'); btnTxt.textContent='TRANSMIT →'; },4000);
+    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_name: 'Vaibhav'
+    });
+    btn.classList.remove('sending');
+    btn.classList.add('sent');
+    btnTxt.textContent = '✓ TRANSMITTED';
+    toast.className = 'form-toast success';
+    toast.textContent = 'MESSAGE RECEIVED. WILL RESPOND SHORTLY.';
+    document.getElementById('senderName').value = '';
+    document.getElementById('senderEmail').value = '';
+    document.getElementById('senderMessage').value = '';
+    setTimeout(() => {
+      btn.classList.remove('sent');
+      btn.disabled = false;
+      btnTxt.textContent = 'TRANSMIT →';
+    }, 5000);
+  } catch (err) {
+    btn.classList.remove('sending');
+    btn.classList.add('error-state');
+    btn.disabled = false;
+    btnTxt.textContent = '✗ FAILED — RETRY';
+    toast.className = 'form-toast error';
+    toast.innerHTML = 'TRANSMISSION FAILED. PLEASE EMAIL DIRECTLY AT <a href="mailto:vaibhavcdiitg@gmail.com" style="color:var(--cyan)">vaibhavcdiitg@gmail.com</a>';
+    setTimeout(() => {
+      btn.classList.remove('error-state');
+      btnTxt.textContent = 'TRANSMIT →';
+    }, 4000);
   }
 }
 
-// Particles
-const pContainer=document.getElementById('particles');
-for(let i=0;i<50;i++){
-  const p=document.createElement('div'); p.className='particle';
-  p.style.cssText=`left:${Math.random()*100}%;animation-duration:${6+Math.random()*10}s;animation-delay:${Math.random()*8}s;--drift:${(Math.random()-0.5)*200}px;opacity:0;`;
-  if(Math.random()>0.7){p.style.background='var(--green)';p.style.width='1px';}
-  pContainer.appendChild(p);
+// Background Particles
+const pContainer = document.getElementById('particles');
+if (pContainer) {
+  for (let i = 0; i < 50; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `left:${Math.random() * 100}%;animation-duration:${6 + Math.random() * 10}s;animation-delay:${Math.random() * 8}s;--drift:${(Math.random() - 0.5) * 200}px;opacity:0;`;
+    if (Math.random() > 0.7) {
+      p.style.background = 'var(--green)';
+      p.style.width = '1px';
+    }
+    pContainer.appendChild(p);
+  }
 }
 
-// Typewriter
-const phrases=['Hello ','Welcome ','to my website','please explore below','Future belongs to those who believe in their intelligence'];
-let pi=0,ci=0,del=false;
-const typedEl=document.getElementById('typedText');
-function type(){
-  const ph=phrases[pi];
-  if(!del){typedEl.textContent=ph.slice(0,++ci);if(ci===ph.length){del=true;setTimeout(type,2000);return;}}
-  else{typedEl.textContent=ph.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;}}
-  setTimeout(type,del?40:70);
+// Terminal Typewriter
+const phrases = [
+  'Hello, World!',
+  'Welcome to my digital space.',
+  'Software & AI Engineer @ IIT Guwahati.',
+  'National Semi-Finalist @ Flipkart GRID 8.0.',
+  'Shortlisted @ Meta AI Hackathon (Top 20k).',
+  'Future belongs to those who believe in their intelligence.'
+];
+let pi = 0, ci = 0, del = false;
+const typedEl = document.getElementById('typedText');
+function type() {
+  if (!typedEl) return;
+  const ph = phrases[pi];
+  if (!del) {
+    typedEl.textContent = ph.slice(0, ++ci);
+    if (ci === ph.length) {
+      del = true;
+      setTimeout(type, 2200);
+      return;
+    }
+  } else {
+    typedEl.textContent = ph.slice(0, --ci);
+    if (ci === 0) {
+      del = false;
+      pi = (pi + 1) % phrases.length;
+    }
+  }
+  setTimeout(type, del ? 35 : 65);
 }
 type();
 
 // Reveal on scroll
-const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(x => {
+    if (x.isIntersecting) x.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
 
-// Scroll dots
-const sIds=['hero','about','cv-research','certifications','profile','skills','projects','gallery','contact'];
-const dots=document.querySelectorAll('.scroll-dot');
-function updateDots(){
-  const mid=window.scrollY+window.innerHeight/2;
-  sIds.forEach((id,i)=>{
-    const el=document.getElementById(id);
-    if(el){const t=el.getBoundingClientRect().top+window.scrollY,b=t+el.offsetHeight;
-      if(mid>=t&&mid<b){dots.forEach(d=>d.classList.remove('active'));if(dots[i])dots[i].classList.add('active');}}
+// Scroll indicator dots with smooth navigation
+const sIds = ['hero', 'about', 'cv-research', 'certifications', 'profile', 'skills', 'projects', 'gallery', 'contact'];
+const dots = document.querySelectorAll('.scroll-dot');
+
+dots.forEach((dot, idx) => {
+  dot.addEventListener('click', () => {
+    const target = document.getElementById(sIds[idx]);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+function updateDots() {
+  const mid = window.scrollY + window.innerHeight / 2;
+  sIds.forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const t = el.getBoundingClientRect().top + window.scrollY;
+      const b = t + el.offsetHeight;
+      if (mid >= t && mid < b) {
+        dots.forEach(d => d.classList.remove('active'));
+        if (dots[i]) dots[i].classList.add('active');
+      }
+    }
   });
 }
-window.addEventListener('scroll',updateDots);
+window.addEventListener('scroll', updateDots, { passive: true });
 
 // Footer clock
-function updateTime(){document.getElementById('footerTime').textContent=`SYS_TIME :: ${new Date().toLocaleTimeString('en-US',{hour12:false})}`;}
-setInterval(updateTime,1000); updateTime();
+function updateTime() {
+  const ft = document.getElementById('footerTime');
+  if (ft) {
+    ft.textContent = `SYS_TIME :: ${new Date().toLocaleTimeString('en-US', { hour12: false })}`;
+  }
+}
+setInterval(updateTime, 1000);
+updateTime();
 
-// Hex deco on panels (no visible //)
-const hx='0123456789ABCDEF';
-const rH=n=>Array.from({length:n},()=>hx[Math.floor(Math.random()*16)]).join('');
-document.querySelectorAll('.panel').forEach(p=>{
-  const d=document.createElement('div'); d.className='hex-deco'; d.style.cssText='bottom:8px;left:12px;font-size:0.55rem;';
-  setInterval(()=>{d.textContent=`0x${rH(8)}`;},2000); p.appendChild(d);
+// Hex decoration on panels
+const hx = '0123456789ABCDEF';
+const rH = n => Array.from({ length: n }, () => hx[Math.floor(Math.random() * 16)]).join('');
+document.querySelectorAll('.panel').forEach(p => {
+  const d = document.createElement('div');
+  d.className = 'hex-deco';
+  d.style.cssText = 'bottom:8px;left:12px;font-size:0.55rem;';
+  setInterval(() => {
+    d.textContent = `0x${rH(8)}`;
+  }, 2000);
+  p.appendChild(d);
 });
 
 // Hero 3D tilt
-const heroWrap=document.querySelector('.hero-photo-wrap');
-const photo3d=document.querySelector('.hero-photo-3d');
-if(heroWrap&&photo3d){
-  document.addEventListener('mousemove',e=>{
-    const rx=document.getElementById('hero'); if(!rx)return;
-    const r=rx.getBoundingClientRect();
-    const x=(e.clientX-r.left)/r.width-0.5;
-    const y=(e.clientY-r.top)/r.height-0.5;
-    photo3d.style.transform=`rotateY(${x*18}deg) rotateX(${-y*12}deg)`;
+const heroWrap = document.querySelector('.hero-photo-wrap');
+const photo3d  = document.querySelector('.hero-photo-3d');
+if (heroWrap && photo3d) {
+  heroWrap.addEventListener('mousemove', e => {
+    const r = heroWrap.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    photo3d.style.transform = `rotateY(${x * 20}deg) rotateX(${-y * 14}deg) scale(1.04)`;
+  });
+  heroWrap.addEventListener('mouseleave', () => {
+    photo3d.style.transform = 'rotateY(-12deg) rotateX(4deg)';
   });
 }
 
 // Gallery 3D tilt
-document.querySelectorAll('.gallery-item').forEach(item=>{
-  item.addEventListener('mousemove',e=>{
-    const r=item.getBoundingClientRect();
-    const x=(e.clientX-r.left)/r.width-0.5;
-    const y=(e.clientY-r.top)/r.height-0.5;
-    item.style.transform=`rotateY(${x*14}deg) rotateX(${-y*10}deg) scale(1.04) translateZ(20px)`;
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('mousemove', e => {
+    const r = item.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    item.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 10}deg) scale(1.04) translateZ(20px)`;
   });
-  item.addEventListener('mouseleave',()=>{
-    const isOdd=[...item.parentElement.children].indexOf(item)%2===0;
-    item.style.transform=isOdd?'rotateX(3deg) rotateY(5deg)':'rotateX(-3deg) rotateY(-5deg)';
+  item.addEventListener('mouseleave', () => {
+    const isOdd = [...item.parentElement.children].indexOf(item) % 2 === 0;
+    item.style.transform = isOdd ? 'rotateX(3deg) rotateY(5deg)' : 'rotateX(-3deg) rotateY(-5deg)';
   });
 });
 
-// Lightbox
-function openLightbox(item){
-  const img=item.querySelector('img'); if(!img)return;
-  document.getElementById('lightboxImg').src=img.src;
-  document.getElementById('lightbox').classList.add('open');
+// Lightbox with Escape key support
+function openLightbox(item) {
+  const img = item.querySelector('img');
+  if (!img) return;
+  const lbImg = document.getElementById('lightboxImg');
+  if (lbImg) {
+    lbImg.src = img.src;
+    lbImg.alt = img.alt || 'Visual Log Preview';
+  }
+  const lb = document.getElementById('lightbox');
+  if (lb) lb.classList.add('open');
 }
-document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});
+
+const lb = document.getElementById('lightbox');
+if (lb) {
+  lb.addEventListener('click', function(e) {
+    if (e.target === this) this.classList.remove('open');
+  });
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    const lb = document.getElementById('lightbox');
+    if (lb && lb.classList.contains('open')) {
+      lb.classList.remove('open');
+    }
+  }
+});
 </script>
 </body>
 </html>
