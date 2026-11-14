@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vaibhav C D // Software Engineer &amp; AI Developer</title>
-<meta name="description" content="Portfolio of Vaibhav C D — Software Engineer, AI Developer & Mathematics and Computing undergrad at IIT Guwahati. National Semi-Finalist at Flipkart GRID 8.0, Shortlisted for Meta AI Developer Hackathon.">
+<meta name="description" content="Portfolio of Vaibhav C D — Upcoming Advanced Developer Intern at Samsung, Software Engineer, AI Developer & Mathematics and Computing undergrad at IIT Guwahati. National Semi-Finalist at Flipkart GRID 8.0, Shortlisted for Meta AI Developer Hackathon.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 
 <!-- Premium Fonts -->
@@ -436,13 +436,15 @@ section{
 .hero-name{
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(2.9rem, 6.2vw, 5.4rem);
-  line-height: 1.05;
-  letter-spacing: -1.5px;
+  font-size: clamp(2.1rem, 5.8vw, 5.4rem);
+  line-height: 1.08;
+  letter-spacing: -1px;
   animation: fadeInUp 0.6s 0.1s ease both;
 }
 .hero-name .line1{
   display: block;
+  white-space: nowrap;
+  word-break: keep-all;
   background: linear-gradient(135deg, #ffffff 40%, #c8e6e5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -452,15 +454,42 @@ section{
   display: block;
   font-size: 0.38em;
   font-weight: 700;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   color: var(--cyan);
   text-transform: uppercase;
   margin-top: 8px;
   opacity: 0.9;
   text-shadow: 0 0 16px var(--cyan-glow);
 }
+.hero-intern-line{
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: clamp(0.85rem, 2vw, 1.02rem);
+  color: #e0f2fe;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 0.6s 0.15s ease both;
+}
+.hero-intern-line .intern-pulse{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 10px var(--green);
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+  display: inline-block;
+}
+.hero-intern-line .samsung-highlight{
+  color: var(--cyan);
+  font-weight: 700;
+  text-shadow: 0 0 12px var(--cyan-glow);
+}
 .hero-title{
-  margin-top: 22px;
+  margin-top: 18px;
   font-size: 1.15rem;
   color: var(--text-muted);
   font-weight: 500;
@@ -1437,6 +1466,7 @@ section{
   color: #fff;
   letter-spacing: 1px;
   margin-bottom: 6px;
+  white-space: nowrap;
 }
 .profile-role{
   font-family: var(--font-mono);
@@ -1780,6 +1810,35 @@ footer{
   .btn{width: 100%}
   .photo-badge-top{right: 0}
   .photo-badge-bottom{left: 0}
+  .hero-name{
+    font-size: clamp(1.8rem, 7.6vw, 2.7rem);
+    letter-spacing: -0.5px;
+  }
+  .hero-name .line1{
+    white-space: nowrap;
+  }
+  .hero-name .line2{
+    font-size: 0.36em;
+    letter-spacing: 3px;
+  }
+  .hero-intern-line{
+    font-size: 0.86rem;
+  }
+}
+
+@media(max-width: 420px){
+  .hero-name{
+    font-size: clamp(1.5rem, 6.8vw, 1.95rem);
+    letter-spacing: -0.5px;
+  }
+  .hero-name .line2{
+    font-size: 0.34em;
+    letter-spacing: 2px;
+  }
+  .hero-intern-line{
+    font-size: 0.78rem;
+    gap: 8px;
+  }
 }
 </style>
 </head>
@@ -1873,6 +1932,10 @@ footer{
         <span class="line1">VAIBHAV C D</span>
         <span class="line2">AI ENGINEER · SOFTWARE DEVELOPER</span>
       </h1>
+      <div class="hero-intern-line">
+        <span class="intern-pulse"></span>
+        <span>Upcoming Advanced Developer Intern at <strong class="samsung-highlight">Samsung</strong></span>
+      </div>
       <div class="hero-title">
         Engineering high-performance software, ML algorithms <span>&amp; real-world products</span>
       </div>
@@ -1936,7 +1999,7 @@ footer{
         <div class="panel-id">SYS::BIO_DATA</div>
         <div class="about-bio">
           <p>
-            Hello! I'm <strong>Vaibhav C D</strong> — a Mathematics and Computing undergrad with a Minor in Data Science and AI at the <strong>Indian Institute of Technology Guwahati (IITG)</strong>.
+            Hello! I'm <strong>Vaibhav C D</strong> — Upcoming Advanced Developer Intern at <strong>Samsung</strong> and a Mathematics and Computing undergrad with a Minor in Data Science and AI at the <strong>Indian Institute of Technology Guwahati (IITG)</strong>.
           </p>
           <p>
             Over the past two years, I have engineered full-stack web applications, high-performance C++ algorithmic frameworks, and machine learning models — merging mathematical rigor with practical software engineering.
@@ -2017,6 +2080,10 @@ footer{
           Official engineering resume detailing academic background, technical skills, competitive hackathons, and shipped software frameworks.
         </p>
         <div class="cv-meta">
+          <div class="cv-meta-item">
+            <span class="cv-meta-key">UPCOMING ROLE</span>
+            <span class="cv-meta-val val-highlight">Adv. Developer Intern @ Samsung</span>
+          </div>
           <div class="cv-meta-item">
             <span class="cv-meta-key">INSTITUTION</span>
             <span class="cv-meta-val">IIT Guwahati</span>
@@ -2491,7 +2558,7 @@ footer{
         </div>
         <div>
           <div class="profile-name">VAIBHAV C D</div>
-          <div class="profile-role">Software &amp; AI Engineer</div>
+          <div class="profile-role">Software &amp; AI Engineer · Adv. Developer Intern @ Samsung</div>
           <div class="profile-location">📍 Bengaluru / IIT Guwahati, India</div>
         </div>
       </div>
@@ -2745,6 +2812,7 @@ if (pContainer) {
 
 // 5. Terminal Typewriter
 const phrases = [
+  'whoami --role="Upcoming Advanced Developer Intern @ Samsung"',
   'whoami --role="Software & AI Engineer @ IIT Guwahati"',
   'cat achievements.txt -> [Flipkart GRID 8.0 National Semi-Finalist]',
   'curl -s "meta.ai/hackathon" -> Shortlisted (Top 20k Worldwide)',
