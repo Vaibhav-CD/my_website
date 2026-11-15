@@ -1140,6 +1140,30 @@ section{
   box-shadow: 0 24px 55px rgba(0, 0, 0, 0.6), 0 0 35px rgba(0, 255, 245, 0.1);
   transform: translateY(-6px);
 }
+.project-card.featured-purple{
+  border-color: rgba(179, 0, 255, 0.35);
+  background: linear-gradient(145deg, rgba(24, 12, 38, 0.72) 0%, rgba(10, 18, 30, 0.68) 100%);
+}
+.project-card.featured-purple::before{
+  background: linear-gradient(90deg, transparent, var(--purple), #38bdf8, transparent);
+  opacity: 0.85;
+}
+.project-card.featured-purple:hover{
+  border-color: var(--purple);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.6), 0 0 35px rgba(179, 0, 255, 0.22);
+}
+.project-card.featured-cyan{
+  border-color: rgba(0, 255, 245, 0.35);
+  background: linear-gradient(145deg, rgba(8, 28, 42, 0.72) 0%, rgba(10, 18, 30, 0.68) 100%);
+}
+.project-card.featured-cyan::before{
+  background: linear-gradient(90deg, transparent, var(--cyan), var(--green), transparent);
+  opacity: 0.85;
+}
+.project-card.featured-cyan:hover{
+  border-color: var(--cyan);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.6), 0 0 35px rgba(0, 255, 245, 0.22);
+}
 .project-num{
   font-family: var(--font-mono);
   font-size: 2.8rem;
@@ -2005,7 +2029,7 @@ footer{
             Over the past two years, I have engineered full-stack web applications, high-performance C++ algorithmic frameworks, and machine learning models — merging mathematical rigor with practical software engineering.
           </p>
           <p>
-            I actively compete in national and global engineering hackathons — recognized as a <span class="highlight-cyan">National Semi-Finalist in Flipkart GRID 8.0</span> (Prompt the Future track) and shortlisted for the international <span class="highlight-purple">Meta AI Developer Hackathon</span> (selected among only 20,000 developers worldwide).
+            I actively compete in national and global engineering hackathons — recognized as a <span class="highlight-cyan">National Semi-Finalist in Flipkart GRID 8.0</span> (Prompt the Future track) and shortlisted for the international <span class="highlight-purple">Meta AI Developer Hackathon</span> for my spatial living canvas <strong class="highlight-cyan">SmartINK</strong> (selected among only 20,000 developers worldwide).
           </p>
         </div>
 
@@ -2124,6 +2148,7 @@ footer{
             Supervised/unsupervised paradigms, gradient boosting optimization, multimodal generative models, and applying AI to real-world domain workflows.
           </div>
           <div class="research-keywords">
+            <span class="rk">Reinforcement Learning</span>
             <span class="rk">Neural Networks</span>
             <span class="rk">Markov Processes</span>
             <span class="rk">LightGBM</span>
@@ -2215,18 +2240,22 @@ footer{
           </div>
         </div>
         <p class="cert-desc">
-          Shortlisted for the international <strong>Meta AI Developer Hackathon</strong>, securing a coveted spot among only <strong>20,000 developers selected worldwide</strong> in an intensely selective global developer cohort building next-generation applications with Meta AI.
+          Shortlisted for the international <strong>Meta AI Developer Hackathon</strong> with <strong>SmartINK</strong>, securing a coveted spot among only <strong>20,000 developers selected worldwide</strong> in an intensely selective global developer cohort building next-generation applications with Meta AI.
         </p>
         <div class="cert-tags-wrap">
           <span class="cert-tag" style="border-color:rgba(179,0,255,0.45);color:#d8b4fe;background:rgba(179,0,255,0.08)">Meta AI</span>
           <span class="cert-tag" style="border-color:rgba(0,255,245,0.4);color:var(--cyan);background:rgba(0,255,245,0.08)">Top 20k Worldwide</span>
+          <span class="cert-tag">SmartINK</span>
           <span class="cert-tag">Llama</span>
           <span class="cert-tag">Global Hackathon</span>
         </div>
       </div>
       <div class="cert-footer">
         <span class="cert-date">📅 2026</span>
-        <div class="cert-status-pill">✓ VERIFIED SELECTION</div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <div class="cert-status-pill">✓ VERIFIED SELECTION</div>
+          <a href="https://github.com/Vaibhav-CD/SmartINK" target="_blank" rel="noopener noreferrer" class="cert-link" style="color:#d8b4fe">SMARTINK REPO ↗</a>
+        </div>
       </div>
     </div>
 
@@ -2319,10 +2348,62 @@ footer{
   </div>
   <div class="projects-grid">
 
-    <!-- Project 01 -->
-    <div class="project-card reveal" style="transition-delay:.1s">
+    <!-- Project 01: SmartINK (Meta AI Developer Hackathon) -->
+    <div class="project-card featured-purple reveal" style="transition-delay:.1s">
       <div>
-        <div class="project-num">01</div>
+        <div class="project-num" style="color:rgba(179,0,255,0.15)">01</div>
+        <div class="project-status" style="color:#d8b4fe;background:rgba(179,0,255,0.08);border-color:rgba(179,0,255,0.3)">
+          <div class="status-dot" style="background:#b300ff;box-shadow:0 0 10px #b300ff"></div>META AI HACKATHON
+        </div>
+        <div class="project-name">SmartINK</div>
+        <div class="project-desc">
+          Next-generation spatial AI canvas combining responsive digital pen input with real-time living calculations and Meta AI / Llama intelligence. Features live math evaluations, spatial variable scratchpads, dynamic graph rendering, and an infinite canvas for interactive mathematical and scientific problem solving.
+        </div>
+        <div class="project-tags">
+          <span class="tag" style="border-color:rgba(179,0,255,0.35);color:#d8b4fe;background:rgba(179,0,255,0.08)">TypeScript</span>
+          <span class="tag">Meta AI / Llama</span>
+          <span class="tag">Canvas API</span>
+          <span class="tag">Math Engine</span>
+          <span class="tag">Next.js / React</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Vaibhav-CD/SmartINK" target="_blank" rel="noopener noreferrer" class="project-link" style="color:#d8b4fe">
+          GITHUB REPO ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 02: LearnSched (Reinforcement Learning CPU Scheduler) -->
+    <div class="project-card featured-cyan reveal" style="transition-delay:.15s">
+      <div>
+        <div class="project-num" style="color:rgba(0,255,245,0.15)">02</div>
+        <div class="project-status" style="color:var(--cyan);background:rgba(0,255,245,0.08);border-color:rgba(0,255,245,0.3)">
+          <div class="status-dot" style="background:var(--cyan);box-shadow:0 0 10px var(--cyan)"></div>REINFORCEMENT LEARNING
+        </div>
+        <div class="project-name">LearnSched — RL CPU Scheduler</div>
+        <div class="project-desc">
+          Adaptive operating system CPU process scheduler utilizing Deep Reinforcement Learning (RL) to dynamically optimize task dispatching policies under varying multi-burst workloads. Outperforms classical heuristics (FCFS, SJF, Round Robin) by minimizing average turnaround and waiting times while reducing context switching overhead.
+        </div>
+        <div class="project-tags">
+          <span class="tag" style="border-color:rgba(0,255,245,0.35);color:var(--cyan);background:rgba(0,255,245,0.08)">Reinforcement Learning</span>
+          <span class="tag">Deep Q-Learning</span>
+          <span class="tag">Python</span>
+          <span class="tag">OS Simulation</span>
+          <span class="tag">Gymnasium / PyTorch</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Vaibhav-CD/LearnSched" target="_blank" rel="noopener noreferrer" class="project-link">
+          GITHUB REPO ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 03: FoodBuddy -->
+    <div class="project-card reveal" style="transition-delay:.2s">
+      <div>
+        <div class="project-num">03</div>
         <div class="project-status">
           <div class="status-dot"></div>PRODUCTION READY
         </div>
@@ -2344,10 +2425,10 @@ footer{
       </div>
     </div>
 
-    <!-- Project 02 -->
-    <div class="project-card reveal" style="transition-delay:.2s">
+    <!-- Project 04: Heuristic Graph Resolution Framework -->
+    <div class="project-card reveal" style="transition-delay:.25s">
       <div>
-        <div class="project-num">02</div>
+        <div class="project-num">04</div>
         <div class="project-status">
           <div class="status-dot"></div>ALGORITHMIC ENGINE
         </div>
@@ -2369,10 +2450,10 @@ footer{
       </div>
     </div>
 
-    <!-- Project 03 -->
+    <!-- Project 05: Movie Rating Prediction Model -->
     <div class="project-card reveal" style="transition-delay:.3s">
       <div>
-        <div class="project-num">03</div>
+        <div class="project-num">05</div>
         <div class="project-status">
           <div class="status-dot"></div>PREDICTIVE MODEL
         </div>
@@ -2417,6 +2498,7 @@ footer{
         <span class="skill-tag highlight">C++</span>
         <span class="skill-tag highlight">C</span>
         <span class="skill-tag">Python</span>
+        <span class="skill-tag">TypeScript</span>
         <span class="skill-tag">JavaScript (ES6+)</span>
         <span class="skill-tag">SQL</span>
       </div>
@@ -2429,7 +2511,9 @@ footer{
       </div>
       <div class="skill-tags">
         <span class="skill-tag highlight">Node.js</span>
+        <span class="skill-tag">Next.js / React</span>
         <span class="skill-tag highlight">HTML5 / CSS3</span>
+        <span class="skill-tag">Canvas API</span>
         <span class="skill-tag">MongoDB</span>
         <span class="skill-tag">RESTful APIs</span>
         <span class="skill-tag">EmailJS</span>
@@ -2443,8 +2527,11 @@ footer{
         <span>⬡</span> AI, ML &amp; Data Science
       </div>
       <div class="skill-tags">
+        <span class="skill-tag highlight">Reinforcement Learning</span>
         <span class="skill-tag highlight">LightGBM</span>
         <span class="skill-tag highlight">Gemini API</span>
+        <span class="skill-tag">Meta AI / Llama</span>
+        <span class="skill-tag">Deep Q-Learning</span>
         <span class="skill-tag">Optuna</span>
         <span class="skill-tag">Pandas</span>
         <span class="skill-tag">NumPy</span>
@@ -2462,6 +2549,7 @@ footer{
         <span class="skill-tag highlight">Graph Theory</span>
         <span class="skill-tag highlight">Combinatorics</span>
         <span class="skill-tag">Optimization</span>
+        <span class="skill-tag">OS Simulation</span>
         <span class="skill-tag">LaTeX</span>
         <span class="skill-tag">Linux / Bash</span>
         <span class="skill-tag">MySQL</span>
@@ -2815,7 +2903,8 @@ const phrases = [
   'whoami --role="Upcoming Advanced Developer Intern @ Samsung"',
   'whoami --role="Software & AI Engineer @ IIT Guwahati"',
   'cat achievements.txt -> [Flipkart GRID 8.0 National Semi-Finalist]',
-  'curl -s "meta.ai/hackathon" -> Shortlisted (Top 20k Worldwide)',
+  'curl -s "meta.ai/hackathon" -> Shortlisted (Top 20k) with SmartINK',
+  'python -m learnsched.train --policy=dqn --env=cpu_scheduler',
   'g++ -O3 -std=c++20 heuristic_graph_resolution.cpp -o mwis_solver',
   'python -m model.predict --input=user_stream --optimize=optuna',
   'Future belongs to those who believe in their intelligence.'
